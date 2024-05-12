@@ -29,7 +29,7 @@ export const CallClaudeAPIDefinition = DefineFunction({
           value: "claude-3-haiku-20240307",
           description: "Claude 3 Haiku 20240307",
         }],
-        default: "claude-3-haiku-20240307",
+        default: "claude-3-opus-20240229",
       },
       message: {
         type: Schema.types.string,
