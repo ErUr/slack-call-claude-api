@@ -3,7 +3,7 @@ import Anthropic from "npm:@anthropic-ai/sdk";
 
 export const CallClaudeAPIDefinition = DefineFunction({
   callback_id: "call_claude_api",
-  title: 'Call Claude "Create a Message" API',
+  title: "Create a Message",
   description:
     "Calls the Anthropic Create a Message API with the given parameters and returns the output",
   source_file: "call_claude_api.ts",
@@ -29,6 +29,7 @@ export const CallClaudeAPIDefinition = DefineFunction({
           value: "claude-3-haiku-20240307",
           description: "Claude 3 Haiku 20240307",
         }],
+        default: "claude-3-haiku-20240307",
       },
       message: {
         type: Schema.types.string,
@@ -39,6 +40,7 @@ export const CallClaudeAPIDefinition = DefineFunction({
         maximum: 4096,
         minimum: 8,
         description: "The maximum number of tokens to generate before stopping",
+        default: 1024,
       },
       system: {
         type: Schema.types.string,
