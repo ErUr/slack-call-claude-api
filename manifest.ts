@@ -6,7 +6,7 @@ export default Manifest({
   description: "Message with Claude via the Anthropic 1st party API",
   icon: "icon.png",
   workflows: [],
-  outgoingDomains: ["api.anthropic.com", "registry.npmjs.org"],
+  outgoingDomains: ["api.anthropic.com"],
   datastores: [],
   functions: [CallClaudeAPIDefinition],
   botScopes: ["app_mentions:read"],
